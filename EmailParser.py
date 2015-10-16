@@ -11,8 +11,8 @@ import time
 
 f = open("confirmations.txt", "w")
 
-EMAIL = input("Email : ")
-PASSWORD = input("Password : ")
+#EMAIL = input("Email : ")
+#PASSWORD = input("Password : ")
 def processMailbox(M):
 	M.select()
 	typ, data = M.search(None, 'SUBJECT "Confirm your email"', '(BODY "OnePlus")')
