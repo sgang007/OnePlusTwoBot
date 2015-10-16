@@ -46,7 +46,7 @@ def manipulatePayload(payload):
 M = imaplib.IMAP4_SSL('imap.gmail.com')
 
 try :
-	M.login(input("Email : "), input("password : "))
+	M.login(raw_input("Email : "), getpass.getpass())
 except imaplib.IMAP4.error:
 	print("LOGIN FAILED")
 
